@@ -2,30 +2,26 @@
   pk: 1
   fields:
     description: Officia deserunt mollit anim id est laborum.
-    options:
-    - 1
-    - 2
 
 - model: polls.Poll
   pk: 2
   fields:
     description: Officia deserunt mollit anim id est laborum.
-    options:
-    - 1
 
-- model: polls.Poll
-  pk: 3
-  fields:
-    description: Officia deserunt mollit anim id est laborum.
-    options:
-    - 2
-
-- mode: polls.Option
+- model: polls.Option
   pk: 1
   fields:
     name: Skra
+    poll: 1
 
-- mode: polls.Option
+- model: polls.Option
   pk: 2
   fields:
     name: Bombom
+    poll: 1
+
+- model: polls.Option
+  pk: 3
+  fields:
+    name: Bombom
+    poll: 2
